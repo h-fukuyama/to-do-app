@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>サインアップ</title>
+</head>
+<body>
+    <table>
+        <form action="login.php" method="post">
+        <input type="hidden" name="mode" value="signin">
+        <tr>
+            <td>ユーザー名（ログインに必要です）</td>
+            <td>
+                <input type="text" name="user_name">
+            </td>
+        </tr>
+        <tr>
+            <td>メールアドレス</td>
+            <td>
+                <input type="text" name="email">
+            </td>
+        </tr>
+        <tr>
+            <td>パスワード</td>
+            <td>
+                <input type="password" name="password">
+            </td>
+        </tr>
+    </table>
+    <input type="submit" name="signin" value="サインアップ">
+    </form>
+</body>
+</html>

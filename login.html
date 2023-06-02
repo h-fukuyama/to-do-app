@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ログイン</title>
+</head>
+<body>
+    <form action="login.php" method="post">
+    <input type="hidden" name="mode" value="login">
+    <table>
+        <tr>
+            <td>ユーザー名</td>
+            <td>
+                <input type="text" name="user_name">
+            </td>
+        </tr>
+        <tr>
+            <td>パスワード</td>
+            <td>
+                <input type="password" name="password">
+            </td>
+        </tr>
+    </table>
+    <input type="submit" name="login" value="ログイン">
+    </form>
+
+    <p><a href="signup.html">新規登録はこちら</a></p>
+</body>
+</html>

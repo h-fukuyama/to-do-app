@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>To Do List</title>
+</head>
+<body>
+    <!--ヘッダー、ユーザー名、ログアウトボタンを追加-->
+    <h1>TO DO LIST</h1>
+    <div>!user_name!</div>
+    <p><a href="logout.php">ログアウト</a></p>
+
+
+    <!--新しいTo do listを追加する部分-->
+    <table border="0">
+        <form action="index.php" method="post">
+        <tr>
+            <td>件名</td>
+            <td>
+                <input type="text" name="title">
+            </td>
+        </tr>
+        <tr>
+            <td>詳細</td>
+            <td>
+                <textarea name="detail" rows="10" cols="25">予定を記入してください</textarea>
+            </td>
+        </tr>
+        <input type="submit" name="addlist" value="TO DOの追加">
+        <input type="hidden" name="mode" value="add">
+        </form>
+    </table>
+ 
+
+    <!--一覧を表示する部分-->
+    <h2>TO DO一覧</h2>
+    <table border="0">
+        <tr>
+            <th>件名</th>
+            <th>詳細</th>
+        </tr>
+        !todolist!
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<tr>
+    <td>!title!</td>
+    <td>!detail!</td>
+    <td>
+        <form action="update.php" method="get">
+        <button type='submit' name="update_id" value="!id!">✍編集</button>
+        <input type="hidden" name="mode" value="update">
+        </form>
+    </td>
+    <td>
+        <form action="index.php" method="post">
+        <button type='submit' name="done_id" value="!id!">✅完了</button>
+        <input type="hidden" name="mode" value="done">
+        </form>
+    </td>
+    <td>
+        <form action="index.php" method="post">
+        <input type="hidden" name="mode" value="delete">
+        <button type='submit' name='delete_id' value="!id!">🚮削除</button>
+        </form>
+    </td>
+<tr>
